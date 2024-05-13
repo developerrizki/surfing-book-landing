@@ -16,18 +16,39 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.form-section {
+  @apply bg-[#020404] min-h-[483px] w-[100%] text-white px-[50px] py-[50px];
+}
+
+.form-title {
+  @apply leading-[77px] text-[50px];
+}
+
+.form-description {
+  letter-spacing: 5px;
+  @apply text-[16px] leading-[20px] mt-3;
+}
+
+.input-custom {
+  background-color: #232323;
+  color: #CCCCCC;
+  @apply text-[16px] leading-[24px] px-[16px] py-[18px] w-[90%];
+}
+
+.btn-custom {
+  background-color: #ffffff;
+  color: #060B0C;
+  font-weight: 600;
+  @apply px-[64px] py-[18px] leading-[24px] text-[20px];
+}
+
+.label-custom {
+  opacity: 60%;
+  font-size: 12px;
 }
